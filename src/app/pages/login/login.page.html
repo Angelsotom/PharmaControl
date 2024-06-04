@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <mat-card>
+    <mat-form-field appearance="fill">
+      <ion-item>
+        <ion-textarea matInput [(ngModel)]="usuario" type="text"label="Usuario" labelPlacement="floating" placeholder="ingrse su Usuario"></ion-textarea>
+      </ion-item>
+     </mat-form-field>
+  </mat-card>
+    <mat-card>
+    <mat-form-field appearance="fill">
+      <ion-item>
+      <ion-input matInput [(ngModel)]="contrasena" type="password" label="Contraseña" value="NeverGonnaGiveYouUp">
+        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+      </ion-item>
+      
+    </mat-form-field>
+
+    <ion-button expand="full" (click)="login()">Iniciar Sesión</ion-button>
+    <ion-button expand="full" (click)="registrarse()">Registrarse</ion-button>
+  </mat-card>
+</ion-content>

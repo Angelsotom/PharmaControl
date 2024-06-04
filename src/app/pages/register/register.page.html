@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <mat-card>
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre de Usuario</mat-label>
+      <input matInput [(ngModel)]="username" type="text">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+    <ion-textarea
+  fill="solid"
+  label="Email"
+  labelPlacement="floating"
+  helperText="ingrese su Email"
+  errorText="Email invalido"
+  matInput [(ngModel)]="email"
+  email
+><input matInput [(ngModel)]="email" type="email">
+    </ion-textarea></mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Contraseña</mat-label>
+      <input matInput [(ngModel)]="password" type="password">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="register()">Registrar</button>
+  </mat-card>
+</ion-content>

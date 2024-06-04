@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <mat-card>
+    <mat-form-field appearance="fill">
+      <ion-item>
+        <ion-textarea type="text" label="Usuario" labelPlacement="floating" placeholder="Ingrese su Usuario"></ion-textarea>
+      </ion-item>
+    </mat-form-field>
+  </mat-card>
+  <mat-card>
+    <mat-form-field appearance="fill">
+      <ion-item>
+        <ion-input type="password" label="Contraseña" value="NeverGonnaGiveYouUp">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+      </ion-item>
+    </mat-form-field>
+
+    <ion-button expand="full" (click)="updateProfile()">Actualizar Perfil</ion-button>
+    <ion-button expand="full" (click)="goToPage('home')">Inicio</ion-button>
+    <ion-button expand="full" (click)="goToPage('recordatorio-medicamento')">Recordatorio de Medicamento</ion-button>
+    <ion-button expand="full" (click)="goToPage('cantidad-medicamento')">Cantidad de Medicamento</ion-button>
+    <ion-button expand="full" (click)="goToPage('recordatoriodeotraspersonasomascotas')">Recordatorios de Otras Personas o Mascotas</ion-button>
+  </mat-card>
+</ion-content>
